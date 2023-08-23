@@ -1,0 +1,3 @@
+User::whereHas('myPosts', function (Builder $query) {
+    $query->where('description', 'like', 'das%');
+})->get();
